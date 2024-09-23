@@ -12,7 +12,10 @@ const navigation = [
   { name: "Portfolio", href: "https://masterbhuvnesh.github.io/portfolio/" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/bhuvneshverma/" },
   { name: "Github", href: "https://github.com/MasterBhuvnesh" },
-  { name: "Code", href: "" },
+  {
+    name: "Code",
+    href: "https://github.com/MasterBhuvnesh/react_authentication_template",
+  },
 ];
 const navigateToPage = (url) => {
   window.location.href = url;
@@ -60,7 +63,7 @@ function App() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <div className="text-sm font-semibold leading-6 text-gray-900">
+            <div className="text-sm font-semibold leading-6 text-gray-900 font-poppins">
               <LoginButton />
               <LogoutButton />
             </div>
@@ -99,14 +102,14 @@ function App() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 font-poppins"
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
                 <div className="py-6">
-                  <div className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                  <div className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 font-poppins">
                     <LoginButton />
                     <LogoutButton />
                   </div>
