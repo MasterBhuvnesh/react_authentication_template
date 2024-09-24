@@ -7,6 +7,7 @@ import LoginButton from "./components/LoginButton";
 import LogoutButton from "./components/LogoutButton";
 import { useAuth0 } from "@auth0/auth0-react";
 import Profile from "./components/Profile";
+import icon from "./images/icon.png";
 
 const navigation = [
   { name: "Portfolio", href: "https://masterbhuvnesh.github.io/portfolio/" },
@@ -31,10 +32,10 @@ function App() {
           className="flex items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <span className="sr-only">AuthO - Template</span>
+            <span className="sr-only">Auth0 - Template</span>
             <img
-              alt=""
-              src="./icon.png"
+              alt="Auth0 - Authentication"
+              src={icon}
               className="h-8 w-auto"
             />
           </div>
@@ -77,10 +78,10 @@ function App() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <span className="sr-only">AuthO - Template</span>
+              <span className="sr-only">Auth0 - Template</span>
               <img
-                alt=""
-                src="./icon.png"
+                alt="Auth0 - Authentication"
+                src={icon}
                 className="h-8 w-auto"
               />
               <button
@@ -102,14 +103,14 @@ function App() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 font-poppins"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50 font-poppins"
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
                 <div className="py-6">
-                  <div className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 font-poppins">
+                  <div className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50 font-poppins">
                     <LoginButton />
                     <LogoutButton />
                   </div>

@@ -1,0 +1,6 @@
+for website
+domain="dev-hx26rbohxpmb4exy.us.auth0.com"
+clientId="edP0pN7Pi2qCplJT6DrH0pCbldiRcga8"
+for localhost
+domain="dev-mf6lqfng.us.auth0.com"
+clientId="5c1HQIOd6HlVEi2CLLfTPO7HCImJ9qZr"

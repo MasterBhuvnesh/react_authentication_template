@@ -1,4 +1,3 @@
-import { PaperClipIcon } from "@heroicons/react/20/solid";
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
